@@ -162,7 +162,7 @@ main{
 
 /* Adjust for devices screen resolution */
 
-@media screen and (max-device-height: 428px) {
+@media screen and (max-device-width: 428px) {
     header {
         padding: 10px;
       }
