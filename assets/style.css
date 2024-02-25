@@ -1,0 +1,209 @@
+/* All the code for the top portion of the website  */
+
+header{
+    padding:60px;
+    background-color: black;
+    border-bottom: 5px solid red ;
+}
+
+header h1{
+    display: inline;
+    position: relative;
+    font-size: 100px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#astro{
+    border-radius: 50%;
+    width: 105px;
+    border: 5px solid gray;
+}
+
+.nav-bar{
+    display: inline;
+    float: right;
+    font-size: 40px;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.nav-bar ul li a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 0.2em;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Allows the underline to disappear from the 'About Me', 'Work', and 'Contact Me'  */
+.link-hover:hover{
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url('./images/ed028cc65e4d04058431f30d9cc2d9d0.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    border-bottom: 5px solid red ;
+}
+
+.banner p{
+    font-size: 100px;
+    float: right;
+    margin-top: 16%;
+    margin-right: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Code about the main part of the webpage */
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-me{
+    font-size: 66px;
+    margin-left: 50px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: red;
+}
+
+.inside-text{
+    width: 500px;
+    height: 900px;
+    border: 5px solid red;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.page-text{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 35px;
+    margin: 7px;
+}
+
+.work-section{
+    margin-right: 450px;
+    position: absolute;
+    margin-left: 680px;
+}
+
+#work{
+    margin-left: 420px;
+    font-size: 66px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: red;
+}
+
+.projects{
+    margin-top: 20px;
+}
+
+/* Changes the opacity of the images when the mouse hovers over them */
+
+.projects img{
+    opacity: 0.55;
+}
+
+.projects img:hover{
+    opacity: 1;
+}
+
+/* Code that details the sizes of the images */
+.market{
+    border: 7px solid gray;
+    width: 1000px;
+    height: 500px;
+}
+
+.java{
+    height: 300px;
+    width: 633px;
+    border: 7px solid gray;
+}
+
+.example{
+    border: 7px solid gray;
+}
+
+/* Code for the 'Contact Me' part of the webpage */
+
+#contact-me{
+  margin-right: 245px;
+  font-size: 66px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: red;
+  
+}
+
+.info{
+    font-size: 40px;
+    line-height: 300px;
+    overflow: hidden;
+}
+
+#github{
+    text-decoration: none;
+    color: skyblue;
+}
+
+/* Adjust for devices screen resolution */
+
+@media screen and (max-device-height: 428px) {
+    header {
+        padding: 10px;
+      }
+      
+      header h1 {
+        font-size: 30px;
+      }
+      
+      .nav-bar {
+        font-size: 16px;
+      }
+      
+      .banner{
+        width: 100%;
+      }
+
+      .banner p {
+        font-size: 30px;
+      }
+      
+      #about-me {
+        font-size: 30px;
+      }
+      
+      .inside-text {
+        margin: 10px;
+      }
+      
+      .page-text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      
+      .projects img {
+        width: 100%; 
+        height: auto; 
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      
+      #contact-me {
+        font-size: 30px;
+      }
+  }
